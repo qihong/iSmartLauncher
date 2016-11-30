@@ -50,7 +50,6 @@ public class ImgCardPresenter extends Presenter {
         if (item instanceof MediaModel) {
             MediaModel mediaModel = (MediaModel) item;
             cardView.setTitleText(mediaModel.getTitle());
-            cardView.setContentText(mediaModel.getContent());
             Glide.with(cardView.getMainImageView().getContext())
                     .load(mediaModel.getImageUrl())
                     .crossFade()

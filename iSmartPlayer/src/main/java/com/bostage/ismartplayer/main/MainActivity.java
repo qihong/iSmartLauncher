@@ -136,17 +136,6 @@ public class MainActivity extends Activity {
         });
     }
 
-    private void addPhotoRow() {
-        String headerName = getResources().getString(R.string.app_header_photo_name);
-        ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new ImgCardPresenter());
-
-        for (MediaModel mediaModel : MediaModel.getPhotoModels()) {
-            listRowAdapter.add(mediaModel);
-        }
-        HeaderItem header = new HeaderItem(0, headerName);
-        rowsAdapter.add(new ListRow(header, listRowAdapter));
-    }
-
     private void addVideoRow() {
         String headerName = getResources().getString(R.string.app_header_video_name);
         ArrayObjectAdapter listRowAdapter = new ArrayObjectAdapter(new ImgCardPresenter());

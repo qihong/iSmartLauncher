@@ -16,7 +16,7 @@ public class MediaDetailsDescriptionPresenter extends AbstractDetailsDescription
         if(itemData instanceof MediaModel){
             MediaModel mediaModel = (MediaModel) itemData;
             viewHolder.getSubtitle().setText(mediaModel.getTitle());
-            viewHolder.getBody().setText(mediaModel.getContent());
+            viewHolder.getBody().setText("");
         }
     }
 }
