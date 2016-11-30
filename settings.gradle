@@ -1,1 +1,1 @@
-include ':uikit', ':common', ':iSmartPlayer'
+include ':iSmartPlayer'
